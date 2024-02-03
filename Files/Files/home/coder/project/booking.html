@@ -58,6 +58,47 @@
       </form>
 
       <form>
+        <select>
+          <optgroup label="Group 1">
+            <option>Option 1.1</option>
+          </optgroup>
+          <optgroup label="Group 2">
+            <option>Option 2.1</option>
+            <option>Option 2.2</option>
+          </optgroup>
+          <optgroup label="Group 3" disabled>
+            <option>Option 3.1</option>
+            <option>Option 3.2</option>
+            <option>Option 3.3</option>
+          </optgroup>
+        </select>
+
+        <label for="flowers">Favourite flower:</label><br />
+        <input list="flowers" name="flowers" />
+        <datalist id="flowers">
+          <option value="Rose"></option>
+          <option value="Lily"></option>
+          <option value="Tulip"></option>
+          <option value="Daffodil"></option>
+          <option value="Orchid"></option>
+        </datalist>
+
+        <fieldset>
+          <legend>Personal Info</legend>
+          <label for="fname">First name:</label><br />
+          <input type="text" id="fname" name="fname" value="John" /><br />
+          <label for="lname">Last name:</label><br />
+          <input type="text" id="lname" name="lname" value="Doe" /><br />
+        </fieldset>
+
+        <fieldset>
+          <legend>Qualificaiton</legend>
+          <label for="pdegree">Primary degree:</label><br />
+          <input type="text" id="pdegree" name="degree" value="Masters" /><br />
+          <label for="fos">Last name:</label><br />
+          <input type="text" id="fos" name="field" value="Psychology" /><br />
+        </fieldset>
+
         <input type="radio" id="alpha" name="letters" value="Alpha" />
         <label for="html">Alpha</label><br />
         <input type="radio" id="beta" name="letters" value="Beta" />
