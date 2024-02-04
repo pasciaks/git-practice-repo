@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .row {
+        display: flex;
+        align-items: stretch;
+      }
+
+      .row .label {
+        flex: 0 0 auto;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+
+      .row .container {
+        flex: 1;
+        display: flex;
+        justify-content: flex-start;
+      }
+
+      .dish {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .pasta {
+        background-color: aqua;
+      }
+
+      .pizza {
+        background-color: lightgreen;
+      }
+
+      .burrito {
+        background-color: lightcoral;
+      }
+
+      .columns {
+        display: flex;
+        align-items: stretch;
+        height: 200px;
+        max-width: 300px;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        flex: 1;
+        padding: 5px;
+      }
+
+      .bar {
+        display: flex;
+        justify-content: center;
+
+        align-items: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: white;
+        font-size: 1.5em;
+      }
+
+      .male {
+        background-color: lightblue;
+      }
+      .female {
+        background-color: lightpink;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="columns">
+      <div class="container">
+        <div class="bar male" style="flex-basis: 35%">35%</div>
+        <div class="bar female" style="flex-basis: 65%">65%</div>
+      </div>
+      <div class="container">
+        <div class="bar male" style="flex-basis: 25%">25%</div>
+        <div class="bar female" style="flex-basis: 75%">75%</div>
+      </div>
+      <div class="container">
+        <div class="bar male" style="flex-basis: 85%">85%</div>
+        <div class="bar female" style="flex-basis: 15%">15%</div>
+      </div>
+    </div>
+    <!-- <div class="row">
+      <div class="label">Preferred Dishes</div>
+      <div class="container">
+        <div class="dish pasta" style="flex-basis: 35%">35%</div>
+        <div class="dish pizza" style="flex-basis: 55%">55%</div>
+        <div class="dish burrito" style="flex-basis: 10%">10%</div>
+      </div>
+    </div> -->
+  </body>
+</html>
