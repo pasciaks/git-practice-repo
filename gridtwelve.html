@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        border: 1px dashed gray;
+      }
+      .parent {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+      }
+
+      .segment {
+        display: grid;
+        place-items: center;
+        text-align: center;
+        grid-template-rows: 100px;
+      }
+
+      .twelve {
+        grid-column: 1 / span 12;
+        background-color: aqua;
+      }
+
+      .eight {
+        grid-column: 5 / span 8;
+        background-color: bisque;
+      }
+
+      .four {
+        grid-column: 1 / span 4;
+        background-color: rgb(179, 194, 67);
+      }
+
+      .six {
+        grid-column: 5 / span 6;
+        background-color: rgb(106, 64, 12);
+      }
+
+      .seven {
+        grid-column: 3 / span 7;
+        background-color: rgb(31, 137, 62);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="segment twelve">span 12</div>
+      <div class="segment eight">span 8</div>
+      <div class="segment four">span 4</div>
+      <div class="segment six">span 6</div>
+      <div class="segment seven">span 7</div>
+      <div class="segment twelve">span 12</div>
+    </div>
+  </body>
+</html>
