@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script defer>
+      window.onload = function () {
+        var context = new AudioContext();
+        context.play();
+      };
+
+      document.addEventListener("click", musicPlay);
+      function musicPlay() {
+        document.getElementById("player").play();
+        document.removeEventListener("click", musicPlay);
+      }
+    </script>
+  </head>
+  <body>
+
+    </iframe>
+    <iframe
+      src="https://archive.org/download/ReclaimHtml5/ReclaimHtml5.mp3"
+      allow="autoplay"
+      id="audio"
+      style="display: none"
+      allow="autoplay"
+    ></iframe>
+    <embed
+      src="http://deinesv.cf/silence.mp3"
+      type="audio/mp3"
+      autostart="true"
+      hidden="true"
+    />
+    <audio id="player" autoplay controls>
+      <source
+        src="https://archive.org/download/ReclaimHtml5/ReclaimHtml5.mp3"
+        type="audio/mp3"
+      />
+    </audio>
+
+    <!-- <audio id="player" autoplay controls>
+      <source
+        src="https://archive.org/download/ReclaimHtml5/ReclaimHtml5.mp3"
+        type="audio/mp3"
+        allow="autoplay"
+        id="audio"
+        style="display: none"
+      />
+    </audio> -->
+
+    <p>
+      This is a recording of a talk called <cite>Reclaim HTML5</cite> which was
+      orinally delivered in Vancouver at a
+      <a
+        href="http://www.meetup.com/vancouver-javascript-developers/"
+        taget="_blank"
+      >
+        Super VanJS Meetup</a
+      >. It is hosted by
+      <a href="https://archive.org/details/ReclaimHtml5" target="_blank"
+        >The Internet Archive</a
+      >
+      and licensed under
+      <a
+        href="http://creativecommons.org/licenses/by/3.0/legalcode"
+        target="_blank"
+      >
+        CC 3.0</a
+      >.
+    </p>
+
+    Read more: https://html.com/media/#ixzz8Qmvk4XmE
+  </body>
+</html>
