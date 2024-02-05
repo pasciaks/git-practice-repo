@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      a {
+        color: red;
+        background-color: blue;
+      }
+      a:hover {
+        color: blue;
+        background-color: red;
+      }
+
+      /* pseudo-classes */
+      a:link {
+        color: yellow;
+      }
+      a:visited {
+        color: green;
+      }
+      a:active {
+        color: brown;
+      }
+      a:focus {
+        color: orange;
+      }
+      button:hover {
+        color: rgb(0, 76, 255);
+        background-color: rgb(144, 170, 144);
+      }
+      button:active {
+        color: yellow;
+        background-color: green;
+      }
+
+      /* form state pseudo classes */
+      input:enabled {
+        color: blue;
+      }
+      input:disabled {
+        color: red;
+      }
+      input:checked {
+        color: green;
+      }
+      input:indeterminate {
+        color: yellow;
+      }
+      input:required {
+        color: brown;
+      }
+      input:optional {
+        color: orange;
+      }
+      input:valid {
+        color: purple;
+      }
+      input:invalid {
+        color: pink;
+      }
+      input:in-range {
+        color: rgb(0, 76, 255);
+      }
+      input:out-of-range {
+        color: rgb(144, 170, 144);
+      }
+      input:read-only {
+        color: rgb(255, 0, 0);
+      }
+      input:read-write {
+        color: rgb(0, 255, 0);
+      }
+      input:placeholder-shown {
+        background-color: rgb(0, 0, 255);
+      }
+      input:default {
+        color: rgb(255, 0, 255);
+      }
+    </style>
+  </head>
+  <body>
+    <a href="#">link</a>
+
+    <a href="#2">link</a>
+
+    <a href="#3">link</a>
+
+    <form>
+      <input type="email" name="" id="" placeholder="e@e.com" /><br />
+      <input type="text" name="" id="" /><br />
+      <input type="password" name="" id="" /><br />
+      <input type="checkbox" name="" id="" /><br />
+      <input type="radio" name="" id="" /><br />
+      <input type="range" name="" id="" /><br />
+    </form>
+    <button>ok</button>
+  </body>
+</html>
