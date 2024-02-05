@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      p {
+      p.none {
         width: 200px;
         border: 1px solid red;
 
@@ -13,14 +13,50 @@
         text-overflow: ellipsis;
         overflow: hidden;
       }
+
+      p.vertical {
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+      }
+
+      p.wordwrap {
+        word-wrap: break-word;
+      }
+
+      p.textshadow {
+        font-family: "Papyrus, Fantasy, Franklin Gothic Medium", "Arial Narrow",
+          Arial, sans-serif;
+        font-size: 2em;
+        /* text-shadow: 2px 2px 5px red; */
+        text-shadow: 2px 2px 3px green, 0 0 5px white;
+        /*
+        text-shadow: h-shadow v-shadow blur-radius color|none|initial|inherit;
+        */
+      }
     </style>
   </head>
   <body>
-    <p>
+    <p class="none">
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae,
       cumque eligendi voluptatem suscipit consectetur obcaecati dolorem delectus
       iste numquam dolores dicta repellat ullam est non reiciendis quia
       consequatur dolorum saepe!
+    </p>
+
+    <p class="vertical">SUCCESS</p>
+
+    <p class="wordwrap">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae,
+      cumque eligendi voluptatem suscipit consectetur obcaecati dolorem delectus
+      iste numquam dolores dicta repellat ullam est non reiciendis quia
+      consequatur dolorum saepe!
+    </p>
+
+    <p class="textshadow">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti aliquam
+      eos libero, voluptatibus accusamus, qui dignissimos atque voluptatem
+      dolores ea similique consequatur! Labore aliquid ea pariatur incidunt non.
+      Molestias, esse.
     </p>
     <h1>Heading 1</h1>
     <h2>Heading 2</h2>
