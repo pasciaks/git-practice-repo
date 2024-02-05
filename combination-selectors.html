@@ -31,6 +31,14 @@
       }
 
       /* general sibling */
+
+      div ~ ul {
+        border: 1px solid red;
+        background-color: yellow;
+        box-shadow: inset 1px 1px 3px #333333;
+      }
+
+      /* general sibling */
       h2 ~ p {
         color: green;
       }
@@ -43,6 +51,19 @@
   </head>
   <body>
     <span>Test</span>
+
+    <div class="container">
+      <p>The ul below is a simpling to this div</p>
+    </div>
+    <ul>
+      <li>a</li>
+      <li>b</li>
+    </ul>
+
+    <ul>
+      <li>a</li>
+      <li>b</li>
+    </ul>
 
     <div class="container">
       <span>Another Test</span>
