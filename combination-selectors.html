@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /*
+
+        combination selectors
+        
+          descendant
+          child
+          general sibling
+          adjacent sibling
+
+    */
+
+      /* descendant -  */
+      div li {
+        color: red;
+      }
+
+      div span {
+        color: yellow;
+      }
+
+      /* child - child elements */
+      div > h1 {
+        color: blue;
+      }
+
+      /* general sibling */
+      h2 ~ p {
+        color: green;
+      }
+
+      /* adjacent sibling */
+      h3 + p {
+        color: brown;
+      }
+    </style>
+  </head>
+  <body>
+    <span>Test</span>
+
+    <div class="container">
+      <span>Another Test</span>
+      <ul>
+        <li>a</li>
+        <li>b</li>
+        <li>c</li>
+        <li>d</li>
+      </ul>
+    </div>
+
+    <div>
+      <h1>111</h1>
+      <p>Not an h2 sibling, but an h1 sibling</p>
+      <h1>222</h1>
+      <section>
+        <h1>333</h1>
+        <h2>h2 h2</h2>
+        <p>siblings of h2</p>
+        <p>siblings of h2</p>
+        <p>siblings of h2</p>
+      </section>
+      <p>444</p>
+      <p>555</p>
+    </div>
+
+    <div>
+      <h3>h3</h3>
+      <p>1st sibling</p>
+      <p>2nd sibling</p>
+    </div>
+  </body>
+</html>
