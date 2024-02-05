@@ -36,6 +36,11 @@
         background-color: green;
       }
 
+      p:hover {
+        /* https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow */
+        box-shadow: 5px 10px 15px 20px rgba(0, 240, 0, 0.5);
+      }
+
       /* form state pseudo classes */
       input:enabled {
         color: blue;
@@ -82,7 +87,7 @@
     </style>
   </head>
   <body>
-    <a href="#">link</a>
+    <a href="#" target="http://lostwords.org">target new url</a>
 
     <a href="#2">link</a>
 
@@ -97,5 +102,17 @@
       <input type="range" name="" id="" /><br />
     </form>
     <button>ok</button>
+
+    <div>
+      <h1>LVHA</h1>
+      <p>link, visited, hover, active</p>
+      <p>Always apply pseudo-classes in that order</p>
+    </div>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+      inventore quaerat unde, dicta tenetur deserunt voluptatibus officiis, ut
+      at quam atque dolor, voluptatum odit esse veniam id quos nobis reiciendis!
+    </p>
   </body>
 </html>
