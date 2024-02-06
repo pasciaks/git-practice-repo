@@ -14,6 +14,10 @@
         overflow: hidden;
       }
 
+      p.none:hover {
+        overflow: visible;
+      }
+
       p.vertical {
         writing-mode: vertical-rl;
         text-orientation: mixed;
@@ -33,9 +37,36 @@
         text-shadow: h-shadow v-shadow blur-radius color|none|initial|inherit;
         */
       }
+
+      body {
+        /* background-color: black; */
+        font-family: cursive;
+      }
+
+      .glow {
+        font-size: 80px;
+        color: #fff;
+        text-align: center;
+        animation: glow 0.5s ease-in-out infinite alternate;
+      }
+
+      @-webkit-keyframes glow {
+        from {
+          text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073,
+            0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073,
+            0 0 70px #e60073;
+        }
+
+        to {
+          text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
+            0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6,
+            0 0 80px #ff4da6;
+        }
+      }
     </style>
   </head>
   <body>
+    <div class="glow">Glowing Text</div>
     <p class="none">
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae,
       cumque eligendi voluptatem suscipit consectetur obcaecati dolorem delectus
