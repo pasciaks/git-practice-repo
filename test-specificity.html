@@ -4,10 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./css/styles-two.css" />
+    <!-- <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/styles-two.css" /> -->
+
+    <style>
+      /* comment in css */
+      div p {
+        color: red;
+      }
+      div + p {
+        color: blue;
+      }
+    </style>
   </head>
   <body>
-    <div id="override" class="override">test</div>
+    <div>
+      <p>alpha</p>
+    </div>
+    <p>beta</p>
+
+    <!-- <div id="override" class="override">test</div> -->
   </body>
 </html>
