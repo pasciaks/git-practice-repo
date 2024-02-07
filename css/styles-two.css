@@ -1,0 +1,44 @@
+.override {
+  color: red;
+}
+
+#override {
+  color: green;
+}
+
+/* Note: css applied as latest found style matching specficit, unless earlier important flag */
+
+
+/* (( typical values of  0, .75, 1, 1.5 )) */
+/* @media screen and (-webkit-device-pixel-ratio: 0) and (min-resolution: .001dpcm) {
+  .class-to-apply {
+    color: blue;
+  }
+}  */
+
+/* @media (-webkit-device-pixel-ratio: 1) {
+  .class-to-apply {
+    color: red;
+  }
+} */
+
+/*
+
+You want to ensure that your webpage is compatible with different browsers and you make use of media rules. Which of the following are media rules used for? Select all that apply.      
+
+
+Set properties for specific rules     
+
+
+Specify the density of the schemes     
+
+Correct
+That’s correct! Media rules are used to specify the density of the schemes.      
+
+
+Apply different styles to different media types or devices     
+
+Correct
+That’s correct! Media rules are used to apply different styles to different media types or devices.      
+
+*/

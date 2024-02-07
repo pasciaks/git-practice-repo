@@ -70,3 +70,11 @@ body {
 div {
   text-align: center;
 }
+
+.override {
+  color: blue;
+}
+
+#override {
+  color: purple !important;
+}
