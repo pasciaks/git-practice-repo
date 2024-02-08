@@ -33,12 +33,12 @@ nav {
   margin: 10px;
 }
 
-nav ul {
+ul {
   list-style-type: none;
   text-align: center;
 }
 
-nav li {
+li {
   display: inline-block;
 }
 
