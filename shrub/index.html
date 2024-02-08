@@ -21,8 +21,9 @@
     />
     <meta property="og:locale" content="en_US" />
     <meta property="og:site_name" content="Lucky Shrub" />
+    <link rel="icon" type="image/png" href="favicon.png" />
     <!-- Stylesheet for layout, colors, fonts, animations. -->
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
 
   <!-- 
@@ -60,7 +61,7 @@
       <img
         height="100"
         id="logo"
-        src="./images/logo_green_header.png"
+        src="./images/logo.png"
         alt="Lucky Shrub logo"
       />
     </header>
@@ -68,28 +69,84 @@
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="index.html">Home</a></li>
+        <li><a href="store.html">Store</a></li>
+        <li><a href="services.html">Landscaping</a></li>
         <li><a href="about.html">About</a></li>
       </ul>
     </nav>
 
     <main>
       <section id="row1">
-        <article>
-          <h1>Main Row One</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
-            suscipit facere distinctio dolor totam dicta soluta nostrum
-            inventore vel. Magni laudantium assumenda ab recusandae voluptate
-            eos aliquid laborum perferendis iste.
-          </p>
+        <article class="hero">
+          <h1 class="center">30% off this weekend!</h1>
         </article>
       </section>
 
       <section id="row2">
-        <article>
-          <h1>About</h1>
+        <article class="card">
+          <h3>Store</h3>
+          <div class="img-hover-zoom img-hover-zoom--xyz">
+            <img
+              class="img-hover-zoom"
+              src="./images/store.jpg"
+              alt="Nursery Store image"
+            />
+          </div>
+          <p>
+            Welcome to our Tucson, Arizona nursery, where the desert's natural
+            beauty comes to life through an exquisite array of plants perfectly
+            suited to thrive in our arid climate. Whether you're an experienced
+            gardener or just beginning to cultivate your green thumb, we have a
+            diverse selection of plants to suit every taste and landscape need.
+          </p>
+          <hr />
+          <div class="hours">
+            <p>Operating Hours</p>
+            <div>
+              <p><span>Mon-Fri:</span> 9:00 AM - 5:00 PM</p>
+              <p><span>Saturday:</span> 10:00 AM - 4:00 PM</p>
+              <p><span>Sunday:</span> Closed</p>
+            </div>
+          </div>
+          <a href="store.html" title="Shop at our store">Shop</a>
+        </article>
+
+        <article class="card">
+          <h3>Landscaping</h3>
+          <div class="img-hover-zoom img-hover-zoom--xyz">
+            <img
+              class="img-hover-zoom"
+              src="./images/services.jpg"
+              alt="Landscape Services image"
+            />
+          </div>
+          <p>
+            Welcome to our Tucson, Arizona nursery, where we not only offer a
+            wide variety of plants but also provide professional landscaping
+            services to help you turn your outdoor space into a stunning desert
+            paradise. Our team of skilled landscapers is dedicated to bringing
+            your vision to life while enhancing the natural beauty of the
+            Southwest.
+          </p>
+          <a href="services.html" title="Book our services">Services</a>
+        </article>
+
+        <article class="card">
+          <h3>About</h3>
+          <div class="img-hover-zoom img-hover-zoom--xyz">
+            <img
+              class="img-hover-zoom"
+              src="./images/about.jpg"
+              alt="About us image."
+            />
+          </div>
+          <p>
+            Lucky Shrub was started by a husband and wife team, Jason and Maria,
+            who share a long-time love for plants. Jason is the garden
+            architect. He creates and oversees all designs while managing his
+            team of landscapers. Maria manages all the marketing for the company
+            and oversees the nursery.
+          </p>
           <p>
             Based in Tuscon, Arizona, Lucky Shrub is a medium-sized garden
             design firm that specializes in garden design and creation,
@@ -98,55 +155,25 @@
             shop for clients to "transform any space into an oasis you can be
             proud of".
           </p>
-        </article>
-
-        <article>
-          <h1>History</h1>
-          <p>
-            Lucky Shrub was started by a husband and wife team, Jason and Maria,
-            who share a long-time love for plants. Jason is the garden
-            architect. He creates and oversees all designs while managing his
-            team of landscapers. Maria manages all the marketing for the company
-            and oversees the nursery.
-          </p>
-        </article>
-
-        <article>
-          <h1>History</h1>
-          <p>
-            Lucky Shrub was started by a husband and wife team, Jason and Maria,
-            who share a long-time love for plants. Jason is the garden
-            architect. He creates and oversees all designs while managing his
-            team of landscapers. Maria manages all the marketing for the company
-            and oversees the nursery.
-          </p>
+          <a href="about.html" title="Learn more about us">About</a>
         </article>
       </section>
     </main>
 
-    <footer class="cta">
-      <div class="footer-images">
-        <img
-          id="logo-footer"
-          height="100"
-          src="./images/logo_red.png"
-          alt="Lucky Shrub logo"
-        />
-        <img
-          id="logo-footer"
-          height="100"
-          src="./images/logo_white.png"
-          alt="Lucky Shrub logo"
-        />
-        <img
-          id="logo-footer"
-          height="100"
-          src="./images/logo_green.png"
-          alt="Lucky Shrub logo"
-        />
+    <footer>
+      <div class="left">
+        <a href="index.html">
+          <img
+            id="logo-footer"
+            height="25"
+            src="./images/logo.png"
+            alt="Lucky Shrub logo"
+        /></a>
+        &nbsp;
+        <span>Your garden go-to resource.</span>
       </div>
-      <div>
-        <p>&copy; Copyright Lucky Shrub</p>
+      <div class="right">
+        <p>&copy;2024 Copyright Lucky Shrub</p>
       </div>
     </footer>
   </body>
