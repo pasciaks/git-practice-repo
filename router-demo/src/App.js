@@ -5,12 +5,14 @@ import Homepage from './Homepage';
 import AboutMe from './AboutMe';
 import cat from "./assets/cat.png";
 import dog from "./assets/images/dog.png";
+import React from 'react'
+import ReactPlayer from 'react-player'
 
 function ProfileImage() {
   const profileImg = "https://picsum.photos/400/265";
   return <img src={profileImg} alt="Profile image" />
 }
-
+// https://cookpete.com/react-player/
 function App() {
   const test = true;
   let randomImageUrl = 'https://picsum.photos/536/354';
@@ -18,6 +20,7 @@ function App() {
   return (
     <div className="App">
       <h1>Router Demo</h1>
+      <ReactPlayer url='https://www.youtube.com/watch?v=LXb3EKWsInQ' />
       <ProfileImage />
       <hr></hr>
       <img src={cat} alt="cat" />
