@@ -6,11 +6,11 @@ import AboutMe from './AboutMe';
 import cat from "./assets/cat.png";
 import dog from "./assets/images/dog.png";
 import React from 'react'
-import ReactPlayer from 'react-player'
+import ReactPlayer from "react-player";
 
 function ProfileImage() {
   const profileImg = "https://picsum.photos/400/265";
-  return <img src={profileImg} alt="Profile image" />
+  return <img src={profileImg} alt="Profile" />
 }
 // https://cookpete.com/react-player/
 function App() {
@@ -20,7 +20,18 @@ function App() {
   return (
     <div className="App">
       <h1>Router Demo</h1>
-      <ReactPlayer url='https://www.youtube.com/watch?v=LXb3EKWsInQ' />
+
+      <div className="player-wrapper">
+        <ReactPlayer
+          autoPlay={true}
+          volume={0.5}
+          // muted={true}
+          controls={true}
+          loop={true}
+          className="react-player"
+          url='https://www.youtube.com/watch?v=LXb3EKWsInQ' />
+      </div>
+
       <ProfileImage />
       <hr></hr>
       <img src={cat} alt="cat" />
