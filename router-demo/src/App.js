@@ -6,6 +6,11 @@ import AboutMe from './AboutMe';
 import cat from "./assets/cat.png";
 import dog from "./assets/images/dog.png";
 
+function ProfileImage() {
+  const profileImg = "https://picsum.photos/400/265";
+  return <img src={profileImg} alt="Profile image" />
+}
+
 function App() {
   const test = true;
   let randomImageUrl = 'https://picsum.photos/536/354';
@@ -13,6 +18,8 @@ function App() {
   return (
     <div className="App">
       <h1>Router Demo</h1>
+      <ProfileImage />
+      <hr></hr>
       <img src={cat} alt="cat" />
       <img src={require("./assets/cat.png")} alt="cat" />
       <div> {
